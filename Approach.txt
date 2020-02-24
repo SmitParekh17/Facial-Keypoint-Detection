@@ -1,0 +1,32 @@
+1) Importing packages and Loading data
+
+2) Checking missing values and dropping them
+
+3) Handling image column as it is row ordered list of pixels
+
+4) Normalizing pixel values for images and target variable
+
+5) Looking few images with keypoints
+
+6) Creating fully connected layer with earlystopping and Modelcheckpoint
+
+7) Plotting graph for loss vs validation loss
+
+8) Applying CNN
+
+9) Data Augmentation : Keras ImageDataGenerator replace original image with augmented image and does not return both augmented image and original image.
+		Approach 1: Increasing the size of Dataset by adding augmenting images
+		Approach 2: Augmenting 50% of the images from batch on the fly
+
+10) Applying Approach 1
+	- Train test split data
+	- Flipping the images and changing the coordinates of keypoints and saving the augmented images.
+	- Adding augmented images to train data and shuffling the data
+	- Applying CNN with Earlystopping and ModelCheckpoint.
+
+11) Applying Approach 2
+	- Train Test Split
+	- Flipping the images and changing the coordinates of keypoints on the fly that is using ImageDataGenerator
+	- Applying CNN with Earlystopping and ModelCheckpoint
+
+12) Final model with Data Augmentation, Dropout, EarlyStopping and Modelcheckpoint.
